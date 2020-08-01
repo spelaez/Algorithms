@@ -14,7 +14,7 @@ print("1: APlusB\n2: MaxPairwiseProduct")
 let input = readLine()!
 
 if input == "1" {
-    
+    APlusB.execute()
 } else if input == "2" {
     
 } else {

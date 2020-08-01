@@ -9,7 +9,7 @@
 import Foundation
 
 class APlusB {
-    init() {
+    class func execute() {
         print("Enter 2 numbers to add")
         let input = readLine()!
         let numbers = input.split(separator: " ").map{ Int($0) ?? 0 }
@@ -17,8 +17,7 @@ class APlusB {
         print(aPlusB(a: numbers[0], b: numbers[1]))
     }
     
-    func aPlusB(a: Int, b: Int) -> Int {
+    class func aPlusB(a: Int, b: Int) -> Int {
         return a + b
     }
-    
 }
