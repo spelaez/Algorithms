@@ -8,8 +8,8 @@
 
 import Foundation
 
-class APlusB {
-    class func execute() {
+class APlusB: CLIExecutable {
+    static func execute() {
         print("Enter 2 numbers to add")
         let input = readLine()!
         let numbers = input.split(separator: " ").map{ Int($0) ?? 0 }
