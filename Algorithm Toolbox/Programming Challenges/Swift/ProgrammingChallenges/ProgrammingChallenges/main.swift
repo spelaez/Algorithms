@@ -15,8 +15,6 @@ protocol CLIExecutable {
 print("Choose which algorithm to run\n")
 print("1: APlusB")
 print("2: MaxPairwiseProduct")
-print("3: Fibonacci")
-
 
 let input = readLine()!
 
@@ -25,8 +23,6 @@ case "1":
     APlusB.execute()
 case "2":
     MaximumPairwiseProduct.execute()
-case "3":
-    Fibonacci.execute()
 default:
     exit(0)
 }

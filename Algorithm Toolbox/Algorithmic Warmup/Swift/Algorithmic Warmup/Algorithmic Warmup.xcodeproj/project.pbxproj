@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBB3BE5324D6336D006557AC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3BE5224D6336D006557AC /* main.swift */; };
-		FBB3BE5A24D63454006557AC /* APlusB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3BE5924D63454006557AC /* APlusB.swift */; };
-		FBB3BE5D24D6391D006557AC /* MaximumPairwiseProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3BE5C24D6391D006557AC /* MaximumPairwiseProduct.swift */; };
-		FBEEDF0924DE1F40009CC068 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEEDF0824DE1F40009CC068 /* Fibonacci.swift */; };
+		FBEEDF1724DE29BA009CC068 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEEDF1624DE29BA009CC068 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FBB3BE4D24D6336D006557AC /* CopyFiles */ = {
+		FBEEDF1124DE29BA009CC068 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,15 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FBB3BE4F24D6336D006557AC /* ProgrammingChallenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProgrammingChallenges; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBB3BE5224D6336D006557AC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		FBB3BE5924D63454006557AC /* APlusB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APlusB.swift; sourceTree = "<group>"; };
-		FBB3BE5C24D6391D006557AC /* MaximumPairwiseProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumPairwiseProduct.swift; sourceTree = "<group>"; };
-		FBEEDF0824DE1F40009CC068 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
+		FBEEDF1324DE29BA009CC068 /* Algorithmic Warmup */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Algorithmic Warmup"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBEEDF1624DE29BA009CC068 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FBB3BE4C24D6336D006557AC /* Frameworks */ = {
+		FBEEDF1024DE29BA009CC068 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,85 +38,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FBB3BE4624D6336D006557AC = {
+		FBEEDF0A24DE29BA009CC068 = {
 			isa = PBXGroup;
 			children = (
-				FBB3BE5124D6336D006557AC /* ProgrammingChallenges */,
-				FBB3BE5024D6336D006557AC /* Products */,
+				FBEEDF1524DE29BA009CC068 /* Algorithmic Warmup */,
+				FBEEDF1424DE29BA009CC068 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FBB3BE5024D6336D006557AC /* Products */ = {
+		FBEEDF1424DE29BA009CC068 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBB3BE4F24D6336D006557AC /* ProgrammingChallenges */,
+				FBEEDF1324DE29BA009CC068 /* Algorithmic Warmup */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FBB3BE5124D6336D006557AC /* ProgrammingChallenges */ = {
+		FBEEDF1524DE29BA009CC068 /* Algorithmic Warmup */ = {
 			isa = PBXGroup;
 			children = (
-				FBEEDF0724DE1F19009CC068 /* Week 2 Algorithmic Warmup */,
-				FBEEDF0624DE1EFB009CC068 /* Week 1 Basic Challenges */,
-				FBB3BE5224D6336D006557AC /* main.swift */,
+				FBEEDF1624DE29BA009CC068 /* main.swift */,
 			);
-			path = ProgrammingChallenges;
-			sourceTree = "<group>";
-		};
-		FBEEDF0624DE1EFB009CC068 /* Week 1 Basic Challenges */ = {
-			isa = PBXGroup;
-			children = (
-				FBB3BE5924D63454006557AC /* APlusB.swift */,
-				FBB3BE5C24D6391D006557AC /* MaximumPairwiseProduct.swift */,
-			);
-			path = "Week 1 Basic Challenges";
-			sourceTree = "<group>";
-		};
-		FBEEDF0724DE1F19009CC068 /* Week 2 Algorithmic Warmup */ = {
-			isa = PBXGroup;
-			children = (
-				FBEEDF0824DE1F40009CC068 /* Fibonacci.swift */,
-			);
-			path = "Week 2 Algorithmic Warmup";
+			path = "Algorithmic Warmup";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FBB3BE4E24D6336D006557AC /* ProgrammingChallenges */ = {
+		FBEEDF1224DE29BA009CC068 /* Algorithmic Warmup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBB3BE5624D6336D006557AC /* Build configuration list for PBXNativeTarget "ProgrammingChallenges" */;
+			buildConfigurationList = FBEEDF1A24DE29BA009CC068 /* Build configuration list for PBXNativeTarget "Algorithmic Warmup" */;
 			buildPhases = (
-				FBB3BE4B24D6336D006557AC /* Sources */,
-				FBB3BE4C24D6336D006557AC /* Frameworks */,
-				FBB3BE4D24D6336D006557AC /* CopyFiles */,
+				FBEEDF0F24DE29BA009CC068 /* Sources */,
+				FBEEDF1024DE29BA009CC068 /* Frameworks */,
+				FBEEDF1124DE29BA009CC068 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ProgrammingChallenges;
-			productName = ProgrammingChallenges;
-			productReference = FBB3BE4F24D6336D006557AC /* ProgrammingChallenges */;
+			name = "Algorithmic Warmup";
+			productName = "Algorithmic Warmup";
+			productReference = FBEEDF1324DE29BA009CC068 /* Algorithmic Warmup */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FBB3BE4724D6336D006557AC /* Project object */ = {
+		FBEEDF0B24DE29BA009CC068 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Santiago Pelaez Rua";
 				TargetAttributes = {
-					FBB3BE4E24D6336D006557AC = {
+					FBEEDF1224DE29BA009CC068 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = FBB3BE4A24D6336D006557AC /* Build configuration list for PBXProject "ProgrammingChallenges" */;
+			buildConfigurationList = FBEEDF0E24DE29BA009CC068 /* Build configuration list for PBXProject "Algorithmic Warmup" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,32 +105,29 @@
 				en,
 				Base,
 			);
-			mainGroup = FBB3BE4624D6336D006557AC;
-			productRefGroup = FBB3BE5024D6336D006557AC /* Products */;
+			mainGroup = FBEEDF0A24DE29BA009CC068;
+			productRefGroup = FBEEDF1424DE29BA009CC068 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FBB3BE4E24D6336D006557AC /* ProgrammingChallenges */,
+				FBEEDF1224DE29BA009CC068 /* Algorithmic Warmup */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FBB3BE4B24D6336D006557AC /* Sources */ = {
+		FBEEDF0F24DE29BA009CC068 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBEEDF0924DE1F40009CC068 /* Fibonacci.swift in Sources */,
-				FBB3BE5A24D63454006557AC /* APlusB.swift in Sources */,
-				FBB3BE5D24D6391D006557AC /* MaximumPairwiseProduct.swift in Sources */,
-				FBB3BE5324D6336D006557AC /* main.swift in Sources */,
+				FBEEDF1724DE29BA009CC068 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FBB3BE5424D6336D006557AC /* Debug */ = {
+		FBEEDF1824DE29BA009CC068 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -215,7 +187,7 @@
 			};
 			name = Debug;
 		};
-		FBB3BE5524D6336D006557AC /* Release */ = {
+		FBEEDF1924DE29BA009CC068 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +240,7 @@
 			};
 			name = Release;
 		};
-		FBB3BE5724D6336D006557AC /* Debug */ = {
+		FBEEDF1B24DE29BA009CC068 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -279,7 +251,7 @@
 			};
 			name = Debug;
 		};
-		FBB3BE5824D6336D006557AC /* Release */ = {
+		FBEEDF1C24DE29BA009CC068 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -293,25 +265,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FBB3BE4A24D6336D006557AC /* Build configuration list for PBXProject "ProgrammingChallenges" */ = {
+		FBEEDF0E24DE29BA009CC068 /* Build configuration list for PBXProject "Algorithmic Warmup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBB3BE5424D6336D006557AC /* Debug */,
-				FBB3BE5524D6336D006557AC /* Release */,
+				FBEEDF1824DE29BA009CC068 /* Debug */,
+				FBEEDF1924DE29BA009CC068 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBB3BE5624D6336D006557AC /* Build configuration list for PBXNativeTarget "ProgrammingChallenges" */ = {
+		FBEEDF1A24DE29BA009CC068 /* Build configuration list for PBXNativeTarget "Algorithmic Warmup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBB3BE5724D6336D006557AC /* Debug */,
-				FBB3BE5824D6336D006557AC /* Release */,
+				FBEEDF1B24DE29BA009CC068 /* Debug */,
+				FBEEDF1C24DE29BA009CC068 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FBB3BE4724D6336D006557AC /* Project object */;
+	rootObject = FBEEDF0B24DE29BA009CC068 /* Project object */;
 }
