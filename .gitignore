@@ -1,3 +1,14 @@
+
+# Xcode
 **/*.xcuserstate
+
+# Rust
+debug/
+target/
+
+Cargo.lock
+
+**/*.rs.bk
+
 
 **/.DS_Store
