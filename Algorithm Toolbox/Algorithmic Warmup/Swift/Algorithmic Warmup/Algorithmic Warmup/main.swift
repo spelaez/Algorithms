@@ -8,5 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
+let choice = readLine()
+
+switch choice {
+case "1":
+    Fibonacci.execute()
+default:
+    exit(0)
+}
 
