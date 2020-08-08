@@ -10,6 +10,7 @@
 		FBB3BE5324D6336D006557AC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3BE5224D6336D006557AC /* main.swift */; };
 		FBB3BE5A24D63454006557AC /* APlusB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3BE5924D63454006557AC /* APlusB.swift */; };
 		FBB3BE5D24D6391D006557AC /* MaximumPairwiseProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3BE5C24D6391D006557AC /* MaximumPairwiseProduct.swift */; };
+		FBEEDF0924DE1F40009CC068 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEEDF0824DE1F40009CC068 /* Fibonacci.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		FBB3BE5224D6336D006557AC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FBB3BE5924D63454006557AC /* APlusB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APlusB.swift; sourceTree = "<group>"; };
 		FBB3BE5C24D6391D006557AC /* MaximumPairwiseProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumPairwiseProduct.swift; sourceTree = "<group>"; };
+		FBEEDF0824DE1F40009CC068 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +63,28 @@
 		FBB3BE5124D6336D006557AC /* ProgrammingChallenges */ = {
 			isa = PBXGroup;
 			children = (
+				FBEEDF0724DE1F19009CC068 /* Week 2 Algorithmic Warmup */,
+				FBEEDF0624DE1EFB009CC068 /* Week 1 Basic Challenges */,
 				FBB3BE5224D6336D006557AC /* main.swift */,
+			);
+			path = ProgrammingChallenges;
+			sourceTree = "<group>";
+		};
+		FBEEDF0624DE1EFB009CC068 /* Week 1 Basic Challenges */ = {
+			isa = PBXGroup;
+			children = (
 				FBB3BE5924D63454006557AC /* APlusB.swift */,
 				FBB3BE5C24D6391D006557AC /* MaximumPairwiseProduct.swift */,
 			);
-			path = ProgrammingChallenges;
+			path = "Week 1 Basic Challenges";
+			sourceTree = "<group>";
+		};
+		FBEEDF0724DE1F19009CC068 /* Week 2 Algorithmic Warmup */ = {
+			isa = PBXGroup;
+			children = (
+				FBEEDF0824DE1F40009CC068 /* Fibonacci.swift */,
+			);
+			path = "Week 2 Algorithmic Warmup";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBEEDF0924DE1F40009CC068 /* Fibonacci.swift in Sources */,
 				FBB3BE5A24D63454006557AC /* APlusB.swift in Sources */,
 				FBB3BE5D24D6391D006557AC /* MaximumPairwiseProduct.swift in Sources */,
 				FBB3BE5324D6336D006557AC /* main.swift in Sources */,
