@@ -1,0 +1,1 @@
+/Users/santiago.pelaez/Documents/Algorithms/Algorithm\ Toolbox/Algorithmic\ Warmup/Rust/algorithm_warmup/target/debug/algorithm_warmup: /Users/santiago.pelaez/Documents/Algorithms/Algorithm\ Toolbox/Algorithmic\ Warmup/Rust/algorithm_warmup/src/main.rs
