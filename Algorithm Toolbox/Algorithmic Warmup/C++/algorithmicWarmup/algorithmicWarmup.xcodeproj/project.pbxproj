@@ -15,6 +15,7 @@
 		FBC3885624E88B790050616C /* huge_fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBC3885524E88B790050616C /* huge_fibonacci.cpp */; };
 		FBC3886124E89FD70050616C /* fibonacci_sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBC3886024E89FD70050616C /* fibonacci_sum.cpp */; };
 		FBC3886C24E8A8470050616C /* fibonacci_partial_sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBC3886B24E8A8470050616C /* fibonacci_partial_sum.cpp */; };
+		FBC3887724E8F0CF0050616C /* fibonacci_sum_of_squares.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBC3887624E8F0CF0050616C /* fibonacci_sum_of_squares.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +91,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		FBC3887224E8F0CF0050616C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +119,8 @@
 		FBC3886024E89FD70050616C /* fibonacci_sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fibonacci_sum.cpp; sourceTree = "<group>"; };
 		FBC3886924E8A8470050616C /* fibonacciPartialSum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fibonacciPartialSum; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC3886B24E8A8470050616C /* fibonacci_partial_sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fibonacci_partial_sum.cpp; sourceTree = "<group>"; };
+		FBC3887424E8F0CF0050616C /* FibonacciSumSquares */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FibonacciSumSquares; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC3887624E8F0CF0050616C /* fibonacci_sum_of_squares.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fibonacci_sum_of_squares.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +180,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBC3887124E8F0CF0050616C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -182,6 +201,7 @@
 				FBC3885424E88B790050616C /* HugeFibonacci */,
 				FBC3885F24E89FD70050616C /* FibonacciSum */,
 				FBC3886A24E8A8470050616C /* fibonacciPartialSum */,
+				FBC3887524E8F0CF0050616C /* FibonacciSumSquares */,
 				FB98615E24DF5D3200D57671 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -197,6 +217,7 @@
 				FBC3885324E88B790050616C /* HugeFibonacci */,
 				FBC3885E24E89FD70050616C /* FibonacciSum */,
 				FBC3886924E8A8470050616C /* fibonacciPartialSum */,
+				FBC3887424E8F0CF0050616C /* FibonacciSumSquares */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,6 +284,14 @@
 				FBC3886B24E8A8470050616C /* fibonacci_partial_sum.cpp */,
 			);
 			path = fibonacciPartialSum;
+			sourceTree = "<group>";
+		};
+		FBC3887524E8F0CF0050616C /* FibonacciSumSquares */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3887624E8F0CF0050616C /* fibonacci_sum_of_squares.cpp */,
+			);
+			path = FibonacciSumSquares;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +433,23 @@
 			productReference = FBC3886924E8A8470050616C /* fibonacciPartialSum */;
 			productType = "com.apple.product-type.tool";
 		};
+		FBC3887324E8F0CF0050616C /* FibonacciSumSquares */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC3887824E8F0CF0050616C /* Build configuration list for PBXNativeTarget "FibonacciSumSquares" */;
+			buildPhases = (
+				FBC3887024E8F0CF0050616C /* Sources */,
+				FBC3887124E8F0CF0050616C /* Frameworks */,
+				FBC3887224E8F0CF0050616C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FibonacciSumSquares;
+			productName = FibonacciSumSquares;
+			productReference = FBC3887424E8F0CF0050616C /* FibonacciSumSquares */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -437,6 +483,9 @@
 					FBC3886824E8A8470050616C = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					FBC3887324E8F0CF0050616C = {
+						CreatedOnToolsVersion = 11.5;
+					};
 				};
 			};
 			buildConfigurationList = FB98615824DF5D3200D57671 /* Build configuration list for PBXProject "algorithmicWarmup" */;
@@ -460,6 +509,7 @@
 				FBC3885224E88B790050616C /* HugeFibonacci */,
 				FBC3885D24E89FD70050616C /* FibonacciSum */,
 				FBC3886824E8A8470050616C /* fibonacciPartialSum */,
+				FBC3887324E8F0CF0050616C /* FibonacciSumSquares */,
 			);
 		};
 /* End PBXProject section */
@@ -526,6 +576,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC3886C24E8A8470050616C /* fibonacci_partial_sum.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC3887024E8F0CF0050616C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC3887724E8F0CF0050616C /* fibonacci_sum_of_squares.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,6 +859,26 @@
 			};
 			name = Release;
 		};
+		FBC3887924E8F0CF0050616C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBC3887A24E8F0CF0050616C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -881,6 +959,15 @@
 			buildConfigurations = (
 				FBC3886E24E8A8470050616C /* Debug */,
 				FBC3886F24E8A8470050616C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC3887824E8F0CF0050616C /* Build configuration list for PBXNativeTarget "FibonacciSumSquares" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC3887924E8F0CF0050616C /* Debug */,
+				FBC3887A24E8F0CF0050616C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
