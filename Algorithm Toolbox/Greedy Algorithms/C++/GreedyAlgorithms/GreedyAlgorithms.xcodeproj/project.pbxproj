@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		FBC3888824EB28560050616C /* change.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBC3888724EB28560050616C /* change.cpp */; };
+		FBC3889E24EB2E6E0050616C /* fractional_knapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBC3889D24EB2E6E0050616C /* fractional_knapsack.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FBC3888224EB28560050616C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FBC3889924EB2E6E0050616C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		FBC3888424EB28560050616C /* MoneyChange */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MoneyChange; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC3888724EB28560050616C /* change.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = change.cpp; sourceTree = "<group>"; };
+		FBC3889B24EB2E6E0050616C /* FractionalKnapsack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FractionalKnapsack; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC3889D24EB2E6E0050616C /* fractional_knapsack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fractional_knapsack.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FBC3888124EB28560050616C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC3889824EB2E6E0050616C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				FBC3888624EB28560050616C /* MoneyChange */,
+				FBC3889C24EB2E6E0050616C /* FractionalKnapsack */,
 				FBC3888524EB28560050616C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				FBC3888424EB28560050616C /* MoneyChange */,
+				FBC3889B24EB2E6E0050616C /* FractionalKnapsack */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				FBC3888724EB28560050616C /* change.cpp */,
 			);
 			path = MoneyChange;
+			sourceTree = "<group>";
+		};
+		FBC3889C24EB2E6E0050616C /* FractionalKnapsack */ = {
+			isa = PBXGroup;
+			children = (
+				FBC3889D24EB2E6E0050616C /* fractional_knapsack.cpp */,
+			);
+			path = FractionalKnapsack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = FBC3888424EB28560050616C /* MoneyChange */;
 			productType = "com.apple.product-type.tool";
 		};
+		FBC3889A24EB2E6E0050616C /* FractionalKnapsack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC3889F24EB2E6E0050616C /* Build configuration list for PBXNativeTarget "FractionalKnapsack" */;
+			buildPhases = (
+				FBC3889724EB2E6E0050616C /* Sources */,
+				FBC3889824EB2E6E0050616C /* Frameworks */,
+				FBC3889924EB2E6E0050616C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FractionalKnapsack;
+			productName = FractionalKnapsack;
+			productReference = FBC3889B24EB2E6E0050616C /* FractionalKnapsack */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				ORGANIZATIONNAME = "Santiago Pelaez Rua";
 				TargetAttributes = {
 					FBC3888324EB28560050616C = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					FBC3889A24EB2E6E0050616C = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -110,6 +159,7 @@
 			projectRoot = "";
 			targets = (
 				FBC3888324EB28560050616C /* MoneyChange */,
+				FBC3889A24EB2E6E0050616C /* FractionalKnapsack */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC3888824EB28560050616C /* change.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC3889724EB2E6E0050616C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC3889E24EB2E6E0050616C /* fractional_knapsack.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +313,26 @@
 			};
 			name = Release;
 		};
+		FBC388A024EB2E6E0050616C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBC388A124EB2E6E0050616C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -272,6 +350,15 @@
 			buildConfigurations = (
 				FBC3888C24EB28560050616C /* Debug */,
 				FBC3888D24EB28560050616C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC3889F24EB2E6E0050616C /* Build configuration list for PBXNativeTarget "FractionalKnapsack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC388A024EB2E6E0050616C /* Debug */,
+				FBC388A124EB2E6E0050616C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
