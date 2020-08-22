@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB282E5A24F1990400659A26 /* dot_product.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB282E5924F1990400659A26 /* dot_product.cpp */; };
 		FBB5FCAC24EDFDA200D81D85 /* car_fueling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB5FCAB24EDFDA200D81D85 /* car_fueling.cpp */; };
 		FBC3888824EB28560050616C /* change.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBC3888724EB28560050616C /* change.cpp */; };
 		FBC3889E24EB2E6E0050616C /* fractional_knapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBC3889D24EB2E6E0050616C /* fractional_knapsack.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		FB282E5524F1990400659A26 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		FBB5FCA724EDFDA200D81D85 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB282E5724F1990400659A26 /* DotProduct */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DotProduct; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB282E5924F1990400659A26 /* dot_product.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dot_product.cpp; sourceTree = "<group>"; };
 		FBB5FCA924EDFDA200D81D85 /* CarFueling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CarFueling; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB5FCAB24EDFDA200D81D85 /* car_fueling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = car_fueling.cpp; sourceTree = "<group>"; };
 		FBC3888424EB28560050616C /* MoneyChange */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MoneyChange; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FB282E5424F1990400659A26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBB5FCA624EDFDA200D81D85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB282E5824F1990400659A26 /* DotProduct */ = {
+			isa = PBXGroup;
+			children = (
+				FB282E5924F1990400659A26 /* dot_product.cpp */,
+			);
+			path = DotProduct;
+			sourceTree = "<group>";
+		};
 		FBB5FCAA24EDFDA200D81D85 /* CarFueling */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +117,7 @@
 				FBC3888624EB28560050616C /* MoneyChange */,
 				FBC3889C24EB2E6E0050616C /* FractionalKnapsack */,
 				FBB5FCAA24EDFDA200D81D85 /* CarFueling */,
+				FB282E5824F1990400659A26 /* DotProduct */,
 				FBC3888524EB28560050616C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +128,7 @@
 				FBC3888424EB28560050616C /* MoneyChange */,
 				FBC3889B24EB2E6E0050616C /* FractionalKnapsack */,
 				FBB5FCA924EDFDA200D81D85 /* CarFueling */,
+				FB282E5724F1990400659A26 /* DotProduct */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +152,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FB282E5624F1990400659A26 /* DotProduct */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB282E5D24F1990400659A26 /* Build configuration list for PBXNativeTarget "DotProduct" */;
+			buildPhases = (
+				FB282E5324F1990400659A26 /* Sources */,
+				FB282E5424F1990400659A26 /* Frameworks */,
+				FB282E5524F1990400659A26 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DotProduct;
+			productName = DotProduct;
+			productReference = FB282E5724F1990400659A26 /* DotProduct */;
+			productType = "com.apple.product-type.tool";
+		};
 		FBB5FCA824EDFDA200D81D85 /* CarFueling */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBB5FCAF24EDFDA200D81D85 /* Build configuration list for PBXNativeTarget "CarFueling" */;
@@ -183,6 +229,9 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Santiago Pelaez Rua";
 				TargetAttributes = {
+					FB282E5624F1990400659A26 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					FBB5FCA824EDFDA200D81D85 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -210,11 +259,20 @@
 				FBC3888324EB28560050616C /* MoneyChange */,
 				FBC3889A24EB2E6E0050616C /* FractionalKnapsack */,
 				FBB5FCA824EDFDA200D81D85 /* CarFueling */,
+				FB282E5624F1990400659A26 /* DotProduct */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FB282E5324F1990400659A26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB282E5A24F1990400659A26 /* dot_product.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBB5FCA524EDFDA200D81D85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +300,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		FB282E5B24F1990400659A26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB282E5C24F1990400659A26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		FBB5FCAD24EDFDA200D81D85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -414,6 +492,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FB282E5D24F1990400659A26 /* Build configuration list for PBXNativeTarget "DotProduct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB282E5B24F1990400659A26 /* Debug */,
+				FB282E5C24F1990400659A26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FBB5FCAF24EDFDA200D81D85 /* Build configuration list for PBXNativeTarget "CarFueling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
