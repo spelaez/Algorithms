@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB937AB124FC1AA60081CB67 /* inversions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB937AB024FC1AA60081CB67 /* inversions.cpp */; };
 		FBAE5C4424FAFF9100AB2587 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBAE5C4324FAFF9100AB2587 /* main.cpp */; };
 		FBAE5C5124FB005200AB2587 /* binary_search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBAE5C5024FB005200AB2587 /* binary_search.cpp */; };
 		FBB1D1B424FB060600F4627A /* majority_element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D1B324FB060600F4627A /* majority_element.cpp */; };
@@ -14,6 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		FB937AAC24FC1AA60081CB67 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		FBAE5C3E24FAFF9100AB2587 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,6 +63,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB937AAE24FC1AA60081CB67 /* Inversions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Inversions; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB937AB024FC1AA60081CB67 /* inversions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = inversions.cpp; sourceTree = "<group>"; };
 		FBAE5C4024FAFF9100AB2587 /* DivideAndConquer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DivideAndConquer; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAE5C4324FAFF9100AB2587 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FBAE5C4E24FB005200AB2587 /* BinarySearch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinarySearch; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +76,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FB937AAB24FC1AA60081CB67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBAE5C3D24FAFF9100AB2587 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB937AAF24FC1AA60081CB67 /* Inversions */ = {
+			isa = PBXGroup;
+			children = (
+				FB937AB024FC1AA60081CB67 /* inversions.cpp */,
+			);
+			path = Inversions;
+			sourceTree = "<group>";
+		};
 		FBAE5C3724FAFF9100AB2587 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +129,7 @@
 				FBAE5C4F24FB005200AB2587 /* BinarySearch */,
 				FBB1D1B224FB060600F4627A /* MajorityElement */,
 				FBB1D1BD24FB408900F4627A /* Sorting */,
+				FB937AAF24FC1AA60081CB67 /* Inversions */,
 				FBAE5C4124FAFF9100AB2587 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +141,7 @@
 				FBAE5C4E24FB005200AB2587 /* BinarySearch */,
 				FBB1D1B124FB060600F4627A /* MajorityElement */,
 				FBB1D1BC24FB408900F4627A /* Sorting */,
+				FB937AAE24FC1AA60081CB67 /* Inversions */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +181,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FB937AAD24FC1AA60081CB67 /* Inversions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB937AB424FC1AA60081CB67 /* Build configuration list for PBXNativeTarget "Inversions" */;
+			buildPhases = (
+				FB937AAA24FC1AA60081CB67 /* Sources */,
+				FB937AAB24FC1AA60081CB67 /* Frameworks */,
+				FB937AAC24FC1AA60081CB67 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Inversions;
+			productName = Inversions;
+			productReference = FB937AAE24FC1AA60081CB67 /* Inversions */;
+			productType = "com.apple.product-type.tool";
+		};
 		FBAE5C3F24FAFF9100AB2587 /* DivideAndConquer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBAE5C4724FAFF9100AB2587 /* Build configuration list for PBXNativeTarget "DivideAndConquer" */;
@@ -229,6 +275,9 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Santiago Pelaez Rua";
 				TargetAttributes = {
+					FB937AAD24FC1AA60081CB67 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					FBAE5C3F24FAFF9100AB2587 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -260,11 +309,20 @@
 				FBAE5C4D24FB005200AB2587 /* BinarySearch */,
 				FBB1D1B024FB060600F4627A /* MajorityElement */,
 				FBB1D1BB24FB408900F4627A /* Sorting */,
+				FB937AAD24FC1AA60081CB67 /* Inversions */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FB937AAA24FC1AA60081CB67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB937AB124FC1AA60081CB67 /* inversions.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBAE5C3C24FAFF9100AB2587 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,6 +358,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		FB937AB224FC1AA60081CB67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB937AB324FC1AA60081CB67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		FBAE5C4524FAFF9100AB2587 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -492,6 +570,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FB937AB424FC1AA60081CB67 /* Build configuration list for PBXNativeTarget "Inversions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB937AB224FC1AA60081CB67 /* Debug */,
+				FB937AB324FC1AA60081CB67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FBAE5C3B24FAFF9100AB2587 /* Build configuration list for PBXProject "DivideAndConquer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
