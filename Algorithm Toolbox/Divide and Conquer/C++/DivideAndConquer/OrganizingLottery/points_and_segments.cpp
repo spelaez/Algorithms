@@ -15,20 +15,20 @@ using namespace std;
 using std::tuple;
 using std::make_tuple;
 
-bool lessThan(pair<int, char> lhs, pair<int, char> rhs) {
+bool lessThan(pair<int, pair<char, int>> lhs, pair<int, pair<char, int>> rhs) {
     if (lhs.first == rhs.first) {
-        return lhs.second < rhs.second;
+        return lhs.second.first < rhs.second.first;
     }
     
     return lhs.first < rhs.first;
 }
 
-bool equal(pair<int, char> lhs, pair<int, char> rhs) {
-    return lhs.first == rhs.first && lhs.second == rhs.second;
+bool equal(pair<int, pair<char, int>> lhs, pair<int, pair<char, int>> rhs) {
+    return lhs.first == rhs.first && lhs.second.first == rhs.second.first;
 }
 
-tuple<int, int> partition3(vector<pair<int, char>> &a, int l, int r) {
-    pair<int, char> x = a[l];
+tuple<int, int> partition3(vector<pair<int, pair<char, int>>> &a, int l, int r) {
+    pair<int, pair<char, int>> x = a[l];
     int j = l;
     
     for (int i = l + 1; i <= r; i++) {
@@ -52,7 +52,7 @@ tuple<int, int> partition3(vector<pair<int, char>> &a, int l, int r) {
     return make_tuple(j, p);
 }
 
-void randomized_quick_sort(vector<pair<int, char>> &a, int l, int r) {
+void randomized_quick_sort(vector<pair<int, pair<char, int>>> &a, int l, int r) {
     if (l >= r) {
         return;
     }
@@ -65,16 +65,16 @@ void randomized_quick_sort(vector<pair<int, char>> &a, int l, int r) {
     randomized_quick_sort(a, std::get<1>(m) + 1, r);
 }
 
-vector<int> countSegments(vector<pair<int, char>> a, int p) {
-    vector<int> count;
+vector<int> countSegments(vector<pair<int, pair<char, int>>> a, int p) {
+    vector<int> count(p);
     int currentSegments = 0;
     for(int i = 0; i < a.size(); i++) {
-        if (a[i].second == 'l') {
+        if (a[i].second.first == 'l') {
             currentSegments++;
-        } else if (a[i].second == 'r') {
+        } else if (a[i].second.first == 'r') {
             currentSegments--;
         } else {
-            count.push_back(currentSegments);
+            count[a[i].second.second] = currentSegments;
         }
     }
     
@@ -85,20 +85,20 @@ int main() {
     int s, p;
     
     cin >> s >> p;
-    vector<pair<int, char>> segments;
+    vector<pair<int, pair<char, int>>> segments;
     
     int l, r;
     
     for(int i = 0; i < s; i++) {
         cin >> l >> r;
-        segments.push_back(make_pair(l, 'l'));
-        segments.push_back(make_pair(r, 'r'));
+        segments.push_back(make_pair(l, make_pair('l', -1)));
+        segments.push_back(make_pair(r, make_pair('r', -1)));
     }
     
     for(int i = 0; i < p; i++) {
         int point;
         cin >> point;
-        segments.push_back(make_pair(point, 'p'));
+        segments.push_back(make_pair(point, make_pair('p', i)));
     }
     
     randomized_quick_sort(segments, 0, segments.size() - 1);
