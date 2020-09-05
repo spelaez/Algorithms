@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB5BE645250332E300CE4C94 /* primitive_calculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE644250332E300CE4C94 /* primitive_calculator.cpp */; };
 		FB75E37B2503291400B05087 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB75E37A2503291400B05087 /* main.cpp */; };
 		FB75E38825032A8500B05087 /* change_dp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB75E38725032A8500B05087 /* change_dp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		FB5BE640250332E300CE4C94 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		FB75E3752503291400B05087 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB5BE642250332E300CE4C94 /* PrimitiveCalculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrimitiveCalculator; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5BE644250332E300CE4C94 /* primitive_calculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = primitive_calculator.cpp; sourceTree = "<group>"; };
 		FB75E3772503291400B05087 /* DynamicProgramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynamicProgramming; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB75E37A2503291400B05087 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FB75E38525032A8500B05087 /* ChangeDP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChangeDP; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FB5BE63F250332E300CE4C94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB75E3742503291400B05087 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,11 +76,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB5BE643250332E300CE4C94 /* PrimitiveCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				FB5BE644250332E300CE4C94 /* primitive_calculator.cpp */,
+			);
+			path = PrimitiveCalculator;
+			sourceTree = "<group>";
+		};
 		FB75E36E2503291400B05087 = {
 			isa = PBXGroup;
 			children = (
 				FB75E3792503291400B05087 /* DynamicProgramming */,
 				FB75E38625032A8500B05087 /* ChangeDP */,
+				FB5BE643250332E300CE4C94 /* PrimitiveCalculator */,
 				FB75E3782503291400B05087 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +99,7 @@
 			children = (
 				FB75E3772503291400B05087 /* DynamicProgramming */,
 				FB75E38525032A8500B05087 /* ChangeDP */,
+				FB5BE642250332E300CE4C94 /* PrimitiveCalculator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +123,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FB5BE641250332E300CE4C94 /* PrimitiveCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB5BE648250332E300CE4C94 /* Build configuration list for PBXNativeTarget "PrimitiveCalculator" */;
+			buildPhases = (
+				FB5BE63E250332E300CE4C94 /* Sources */,
+				FB5BE63F250332E300CE4C94 /* Frameworks */,
+				FB5BE640250332E300CE4C94 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrimitiveCalculator;
+			productName = PrimitiveCalculator;
+			productReference = FB5BE642250332E300CE4C94 /* PrimitiveCalculator */;
+			productType = "com.apple.product-type.tool";
+		};
 		FB75E3762503291400B05087 /* DynamicProgramming */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB75E37E2503291400B05087 /* Build configuration list for PBXNativeTarget "DynamicProgramming" */;
@@ -137,6 +183,9 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Santiago Pelaez Rua";
 				TargetAttributes = {
+					FB5BE641250332E300CE4C94 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					FB75E3762503291400B05087 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -160,11 +209,20 @@
 			targets = (
 				FB75E3762503291400B05087 /* DynamicProgramming */,
 				FB75E38425032A8500B05087 /* ChangeDP */,
+				FB5BE641250332E300CE4C94 /* PrimitiveCalculator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FB5BE63E250332E300CE4C94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5BE645250332E300CE4C94 /* primitive_calculator.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB75E3732503291400B05087 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,6 +242,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		FB5BE646250332E300CE4C94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB5BE647250332E300CE4C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		FB75E37C2503291400B05087 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -336,6 +414,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FB5BE648250332E300CE4C94 /* Build configuration list for PBXNativeTarget "PrimitiveCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5BE646250332E300CE4C94 /* Debug */,
+				FB5BE647250332E300CE4C94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FB75E3722503291400B05087 /* Build configuration list for PBXProject "DynamicProgramming" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
