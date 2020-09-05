@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		FB75E37B2503291400B05087 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB75E37A2503291400B05087 /* main.cpp */; };
+		FB75E38825032A8500B05087 /* change_dp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB75E38725032A8500B05087 /* change_dp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FB75E3752503291400B05087 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FB75E38325032A8500B05087 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		FB75E3772503291400B05087 /* DynamicProgramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynamicProgramming; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB75E37A2503291400B05087 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FB75E38525032A8500B05087 /* ChangeDP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChangeDP; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB75E38725032A8500B05087 /* change_dp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = change_dp.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FB75E3742503291400B05087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB75E38225032A8500B05087 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				FB75E3792503291400B05087 /* DynamicProgramming */,
+				FB75E38625032A8500B05087 /* ChangeDP */,
 				FB75E3782503291400B05087 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				FB75E3772503291400B05087 /* DynamicProgramming */,
+				FB75E38525032A8500B05087 /* ChangeDP */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				FB75E37A2503291400B05087 /* main.cpp */,
 			);
 			path = DynamicProgramming;
+			sourceTree = "<group>";
+		};
+		FB75E38625032A8500B05087 /* ChangeDP */ = {
+			isa = PBXGroup;
+			children = (
+				FB75E38725032A8500B05087 /* change_dp.cpp */,
+			);
+			path = ChangeDP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = FB75E3772503291400B05087 /* DynamicProgramming */;
 			productType = "com.apple.product-type.tool";
 		};
+		FB75E38425032A8500B05087 /* ChangeDP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB75E38925032A8500B05087 /* Build configuration list for PBXNativeTarget "ChangeDP" */;
+			buildPhases = (
+				FB75E38125032A8500B05087 /* Sources */,
+				FB75E38225032A8500B05087 /* Frameworks */,
+				FB75E38325032A8500B05087 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChangeDP;
+			productName = ChangeDP;
+			productReference = FB75E38525032A8500B05087 /* ChangeDP */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				ORGANIZATIONNAME = "Santiago Pelaez Rua";
 				TargetAttributes = {
 					FB75E3762503291400B05087 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					FB75E38425032A8500B05087 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -110,6 +159,7 @@
 			projectRoot = "";
 			targets = (
 				FB75E3762503291400B05087 /* DynamicProgramming */,
+				FB75E38425032A8500B05087 /* ChangeDP */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB75E37B2503291400B05087 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB75E38125032A8500B05087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB75E38825032A8500B05087 /* change_dp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +313,26 @@
 			};
 			name = Release;
 		};
+		FB75E38A25032A8500B05087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB75E38B25032A8500B05087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -272,6 +350,15 @@
 			buildConfigurations = (
 				FB75E37F2503291400B05087 /* Debug */,
 				FB75E3802503291400B05087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB75E38925032A8500B05087 /* Build configuration list for PBXNativeTarget "ChangeDP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB75E38A25032A8500B05087 /* Debug */,
+				FB75E38B25032A8500B05087 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
