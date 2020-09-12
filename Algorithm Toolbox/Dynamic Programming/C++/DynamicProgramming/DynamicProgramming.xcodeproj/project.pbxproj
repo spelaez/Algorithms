@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FB5BE645250332E300CE4C94 /* primitive_calculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE644250332E300CE4C94 /* primitive_calculator.cpp */; };
 		FB5BE650250413D600CE4C94 /* edit_distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE64F250413D600CE4C94 /* edit_distance.cpp */; };
+		FB5BE6692507081E00CE4C94 /* lcs2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6682507081E00CE4C94 /* lcs2.cpp */; };
+		FB5BE674250712B000CE4C94 /* lcs3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE673250712B000CE4C94 /* lcs3.cpp */; };
 		FB75E37B2503291400B05087 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB75E37A2503291400B05087 /* main.cpp */; };
 		FB75E38825032A8500B05087 /* change_dp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB75E38725032A8500B05087 /* change_dp.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,24 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		FB5BE64B250413D600CE4C94 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FB5BE6642507081E00CE4C94 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FB5BE66F250712B000CE4C94 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -57,6 +77,10 @@
 		FB5BE644250332E300CE4C94 /* primitive_calculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = primitive_calculator.cpp; sourceTree = "<group>"; };
 		FB5BE64D250413D600CE4C94 /* EditDistance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EditDistance; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5BE64F250413D600CE4C94 /* edit_distance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = edit_distance.cpp; sourceTree = "<group>"; };
+		FB5BE6662507081E00CE4C94 /* LongestCommonSubsequence2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LongestCommonSubsequence2; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5BE6682507081E00CE4C94 /* lcs2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lcs2.cpp; sourceTree = "<group>"; };
+		FB5BE671250712B000CE4C94 /* LongestCommonSubsequence3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LongestCommonSubsequence3; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5BE673250712B000CE4C94 /* lcs3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lcs3.cpp; sourceTree = "<group>"; };
 		FB75E3772503291400B05087 /* DynamicProgramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynamicProgramming; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB75E37A2503291400B05087 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FB75E38525032A8500B05087 /* ChangeDP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChangeDP; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +96,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FB5BE64A250413D600CE4C94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5BE6632507081E00CE4C94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5BE66E250712B000CE4C94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -111,6 +149,22 @@
 			path = EditDistance;
 			sourceTree = "<group>";
 		};
+		FB5BE6672507081E00CE4C94 /* LongestCommonSubsequence2 */ = {
+			isa = PBXGroup;
+			children = (
+				FB5BE6682507081E00CE4C94 /* lcs2.cpp */,
+			);
+			path = LongestCommonSubsequence2;
+			sourceTree = "<group>";
+		};
+		FB5BE672250712B000CE4C94 /* LongestCommonSubsequence3 */ = {
+			isa = PBXGroup;
+			children = (
+				FB5BE673250712B000CE4C94 /* lcs3.cpp */,
+			);
+			path = LongestCommonSubsequence3;
+			sourceTree = "<group>";
+		};
 		FB75E36E2503291400B05087 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +172,8 @@
 				FB75E38625032A8500B05087 /* ChangeDP */,
 				FB5BE643250332E300CE4C94 /* PrimitiveCalculator */,
 				FB5BE64E250413D600CE4C94 /* EditDistance */,
+				FB5BE6672507081E00CE4C94 /* LongestCommonSubsequence2 */,
+				FB5BE672250712B000CE4C94 /* LongestCommonSubsequence3 */,
 				FB75E3782503291400B05087 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,6 +185,8 @@
 				FB75E38525032A8500B05087 /* ChangeDP */,
 				FB5BE642250332E300CE4C94 /* PrimitiveCalculator */,
 				FB5BE64D250413D600CE4C94 /* EditDistance */,
+				FB5BE6662507081E00CE4C94 /* LongestCommonSubsequence2 */,
+				FB5BE671250712B000CE4C94 /* LongestCommonSubsequence3 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +244,40 @@
 			productReference = FB5BE64D250413D600CE4C94 /* EditDistance */;
 			productType = "com.apple.product-type.tool";
 		};
+		FB5BE6652507081E00CE4C94 /* LongestCommonSubsequence2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB5BE66C2507081E00CE4C94 /* Build configuration list for PBXNativeTarget "LongestCommonSubsequence2" */;
+			buildPhases = (
+				FB5BE6622507081E00CE4C94 /* Sources */,
+				FB5BE6632507081E00CE4C94 /* Frameworks */,
+				FB5BE6642507081E00CE4C94 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LongestCommonSubsequence2;
+			productName = LongestCommonSubsequence2;
+			productReference = FB5BE6662507081E00CE4C94 /* LongestCommonSubsequence2 */;
+			productType = "com.apple.product-type.tool";
+		};
+		FB5BE670250712B000CE4C94 /* LongestCommonSubsequence3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB5BE675250712B000CE4C94 /* Build configuration list for PBXNativeTarget "LongestCommonSubsequence3" */;
+			buildPhases = (
+				FB5BE66D250712B000CE4C94 /* Sources */,
+				FB5BE66E250712B000CE4C94 /* Frameworks */,
+				FB5BE66F250712B000CE4C94 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LongestCommonSubsequence3;
+			productName = LongestCommonSubsequence3;
+			productReference = FB5BE671250712B000CE4C94 /* LongestCommonSubsequence3 */;
+			productType = "com.apple.product-type.tool";
+		};
 		FB75E3762503291400B05087 /* DynamicProgramming */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB75E37E2503291400B05087 /* Build configuration list for PBXNativeTarget "DynamicProgramming" */;
@@ -235,6 +327,12 @@
 					FB5BE64C250413D600CE4C94 = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					FB5BE6652507081E00CE4C94 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					FB5BE670250712B000CE4C94 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					FB75E3762503291400B05087 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -260,6 +358,8 @@
 				FB75E38425032A8500B05087 /* ChangeDP */,
 				FB5BE641250332E300CE4C94 /* PrimitiveCalculator */,
 				FB5BE64C250413D600CE4C94 /* EditDistance */,
+				FB5BE6652507081E00CE4C94 /* LongestCommonSubsequence2 */,
+				FB5BE670250712B000CE4C94 /* LongestCommonSubsequence3 */,
 			);
 		};
 /* End PBXProject section */
@@ -278,6 +378,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB5BE650250413D600CE4C94 /* edit_distance.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5BE6622507081E00CE4C94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5BE6692507081E00CE4C94 /* lcs2.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5BE66D250712B000CE4C94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5BE674250712B000CE4C94 /* lcs3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +447,46 @@
 			name = Debug;
 		};
 		FB5BE653250413D600CE4C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FB5BE66A2507081E00CE4C94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB5BE66B2507081E00CE4C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FB5BE676250712B000CE4C94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB5BE677250712B000CE4C94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +662,24 @@
 			buildConfigurations = (
 				FB5BE652250413D600CE4C94 /* Debug */,
 				FB5BE653250413D600CE4C94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB5BE66C2507081E00CE4C94 /* Build configuration list for PBXNativeTarget "LongestCommonSubsequence2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5BE66A2507081E00CE4C94 /* Debug */,
+				FB5BE66B2507081E00CE4C94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB5BE675250712B000CE4C94 /* Build configuration list for PBXNativeTarget "LongestCommonSubsequence3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5BE676250712B000CE4C94 /* Debug */,
+				FB5BE677250712B000CE4C94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
