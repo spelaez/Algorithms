@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB494973250E8A8000E4F442 /* partition3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB494972250E8A8000E4F442 /* partition3.cpp */; };
+		FB553EE2250D52FA00BD2150 /* knapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB553EE1250D52FA00BD2150 /* knapsack.cpp */; };
 		FB5BE645250332E300CE4C94 /* primitive_calculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE644250332E300CE4C94 /* primitive_calculator.cpp */; };
 		FB5BE650250413D600CE4C94 /* edit_distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE64F250413D600CE4C94 /* edit_distance.cpp */; };
 		FB5BE6692507081E00CE4C94 /* lcs2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6682507081E00CE4C94 /* lcs2.cpp */; };
@@ -16,6 +18,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		FB49496E250E8A8000E4F442 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FB553EDD250D52FA00BD2150 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		FB5BE640250332E300CE4C94 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,6 +93,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB494970250E8A8000E4F442 /* PartitioningSouvenirs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PartitioningSouvenirs; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB494972250E8A8000E4F442 /* partition3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = partition3.cpp; sourceTree = "<group>"; };
+		FB553EDF250D52FA00BD2150 /* Knapsack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Knapsack; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB553EE1250D52FA00BD2150 /* knapsack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = knapsack.cpp; sourceTree = "<group>"; };
 		FB5BE642250332E300CE4C94 /* PrimitiveCalculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrimitiveCalculator; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5BE644250332E300CE4C94 /* primitive_calculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = primitive_calculator.cpp; sourceTree = "<group>"; };
 		FB5BE64D250413D600CE4C94 /* EditDistance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EditDistance; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +112,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FB49496D250E8A8000E4F442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB553EDC250D52FA00BD2150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB5BE63F250332E300CE4C94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +171,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB494971250E8A8000E4F442 /* PartitioningSouvenirs */ = {
+			isa = PBXGroup;
+			children = (
+				FB494972250E8A8000E4F442 /* partition3.cpp */,
+			);
+			path = PartitioningSouvenirs;
+			sourceTree = "<group>";
+		};
+		FB553EE0250D52FA00BD2150 /* Knapsack */ = {
+			isa = PBXGroup;
+			children = (
+				FB553EE1250D52FA00BD2150 /* knapsack.cpp */,
+			);
+			path = Knapsack;
+			sourceTree = "<group>";
+		};
 		FB5BE643250332E300CE4C94 /* PrimitiveCalculator */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +228,8 @@
 				FB5BE64E250413D600CE4C94 /* EditDistance */,
 				FB5BE6672507081E00CE4C94 /* LongestCommonSubsequence2 */,
 				FB5BE672250712B000CE4C94 /* LongestCommonSubsequence3 */,
+				FB553EE0250D52FA00BD2150 /* Knapsack */,
+				FB494971250E8A8000E4F442 /* PartitioningSouvenirs */,
 				FB75E3782503291400B05087 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -187,6 +243,8 @@
 				FB5BE64D250413D600CE4C94 /* EditDistance */,
 				FB5BE6662507081E00CE4C94 /* LongestCommonSubsequence2 */,
 				FB5BE671250712B000CE4C94 /* LongestCommonSubsequence3 */,
+				FB553EDF250D52FA00BD2150 /* Knapsack */,
+				FB494970250E8A8000E4F442 /* PartitioningSouvenirs */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +268,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FB49496F250E8A8000E4F442 /* PartitioningSouvenirs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB494976250E8A8000E4F442 /* Build configuration list for PBXNativeTarget "PartitioningSouvenirs" */;
+			buildPhases = (
+				FB49496C250E8A8000E4F442 /* Sources */,
+				FB49496D250E8A8000E4F442 /* Frameworks */,
+				FB49496E250E8A8000E4F442 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PartitioningSouvenirs;
+			productName = PartitioningSouvenirs;
+			productReference = FB494970250E8A8000E4F442 /* PartitioningSouvenirs */;
+			productType = "com.apple.product-type.tool";
+		};
+		FB553EDE250D52FA00BD2150 /* Knapsack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB553EE5250D52FA00BD2150 /* Build configuration list for PBXNativeTarget "Knapsack" */;
+			buildPhases = (
+				FB553EDB250D52FA00BD2150 /* Sources */,
+				FB553EDC250D52FA00BD2150 /* Frameworks */,
+				FB553EDD250D52FA00BD2150 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Knapsack;
+			productName = Knapsack;
+			productReference = FB553EDF250D52FA00BD2150 /* Knapsack */;
+			productType = "com.apple.product-type.tool";
+		};
 		FB5BE641250332E300CE4C94 /* PrimitiveCalculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB5BE648250332E300CE4C94 /* Build configuration list for PBXNativeTarget "PrimitiveCalculator" */;
@@ -321,6 +413,12 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Santiago Pelaez Rua";
 				TargetAttributes = {
+					FB49496F250E8A8000E4F442 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					FB553EDE250D52FA00BD2150 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					FB5BE641250332E300CE4C94 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -360,11 +458,29 @@
 				FB5BE64C250413D600CE4C94 /* EditDistance */,
 				FB5BE6652507081E00CE4C94 /* LongestCommonSubsequence2 */,
 				FB5BE670250712B000CE4C94 /* LongestCommonSubsequence3 */,
+				FB553EDE250D52FA00BD2150 /* Knapsack */,
+				FB49496F250E8A8000E4F442 /* PartitioningSouvenirs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FB49496C250E8A8000E4F442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB494973250E8A8000E4F442 /* partition3.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB553EDB250D52FA00BD2150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB553EE2250D52FA00BD2150 /* knapsack.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB5BE63E250332E300CE4C94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +532,46 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		FB494974250E8A8000E4F442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB494975250E8A8000E4F442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FB553EE3250D52FA00BD2150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB553EE4250D52FA00BD2150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		FB5BE646250332E300CE4C94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -648,6 +804,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FB494976250E8A8000E4F442 /* Build configuration list for PBXNativeTarget "PartitioningSouvenirs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB494974250E8A8000E4F442 /* Debug */,
+				FB494975250E8A8000E4F442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB553EE5250D52FA00BD2150 /* Build configuration list for PBXNativeTarget "Knapsack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB553EE3250D52FA00BD2150 /* Debug */,
+				FB553EE4250D52FA00BD2150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FB5BE648250332E300CE4C94 /* Build configuration list for PBXNativeTarget "PrimitiveCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
