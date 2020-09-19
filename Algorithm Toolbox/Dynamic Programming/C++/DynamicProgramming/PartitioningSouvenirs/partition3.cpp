@@ -10,7 +10,7 @@
 #include <vector>
 using namespace std;
 
-vector<vector<int>> knapsack(vector<vector<int>> dp, int W, vector<int> w, int n) {
+int knapsack(vector<vector<int>> dp, int W, vector<int> w, int n) {
     for (int i = 0; i <= W; i++) {
         dp[i][0] = 0;
     }
@@ -24,56 +24,29 @@ vector<vector<int>> knapsack(vector<vector<int>> dp, int W, vector<int> w, int n
         }
     }
     
-    return dp;
-}
-
-vector<int> reconstruct(vector<vector<int>> dp, vector<int> w) {
-    vector<bool> taken(w.size(), false);
-    
-    int i = dp.size() - 1, j = dp[0].size() - 1;
-    
-    while(i > 0 && j > 0) {
-        if (dp[i][j] == dp[i][j-1]) {
-            //Item j-1 not taken
-            j = j - 1;
-        } else if (dp[i][j] == dp[i-w[j-1]][j-1] + w[j-1]) {
-            //Item j-1 is taken
-            taken[j-1] = true;
-            i = i - w[j-1];
-            j = j - 1;
-        }
-    }
-    
-    for(int i = taken.size() - 1; i >= 0; i--) {
-        if(taken[i]) {
-            w.erase(w.begin()+i);
-        }
-    }
-    
-    return w;
+    return dp[W][n];
 }
 
 int partition3(int w, vector<int> v) {
     int n = v.size();
     vector<vector<int>> dp(w+1, vector<int>(n+1));
     
-    dp = knapsack(dp, w, v, v.size());
+    int x = knapsack(dp, w, v, n);
     
-    if(dp[w][n] == w) {
-        // 1 partition possible
-        v = reconstruct(dp, v);
-        n = v.size();
+    if(x == w) {
+        vector<vector<int>> dp2(w*2+1, vector<int>(n+1));
+        int y = knapsack(dp2, w*2, v, n);
         
-        vector<vector<int>> dp2(w+1, vector<int>(n+1));
-        
-        dp2 = knapsack(dp2, w, v, v.size());
-        if(dp2[w][n] == w) {
-            return 1;
+        if(y == 2*w) {
+            vector<vector<int>> dp3(w*3+1, vector<int>(n+1));
+            int z = knapsack(dp3, w*3, v, n);
+            
+            if (z == 3*w) {
+                return 1;
+            }
         }
-    } else {
-        return 0;
     }
-    
+
     return 0;
 }
 
