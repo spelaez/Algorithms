@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FBAE50B52517F168002EE642 /* network_simulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBAE50B42517F168002EE642 /* network_simulation.cpp */; };
+		FBAE50C525184793002EE642 /* stack_with_max.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBAE50C425184793002EE642 /* stack_with_max.cpp */; };
 		FBB20B392515BDDD000F9BFB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB20B382515BDDD000F9BFB /* main.cpp */; };
 		FBB20B472515BFD6000F9BFB /* brackets_in_code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB20B462515BFD6000F9BFB /* brackets_in_code.cpp */; };
 		FBB20B562516CCD0000F9BFB /* tree_height.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB20B552516CCD0000F9BFB /* tree_height.cpp */; };
@@ -15,6 +16,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FBAE50A22517F112002EE642 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FBAE50C025184793002EE642 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -55,6 +65,8 @@
 /* Begin PBXFileReference section */
 		FBAE50A42517F112002EE642 /* NetworkSimulation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NetworkSimulation; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAE50B42517F168002EE642 /* network_simulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_simulation.cpp; sourceTree = "<group>"; };
+		FBAE50C225184793002EE642 /* StackWithMax */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StackWithMax; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAE50C425184793002EE642 /* stack_with_max.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stack_with_max.cpp; sourceTree = "<group>"; };
 		FBB20B352515BDDD000F9BFB /* BasicDataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BasicDataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB20B382515BDDD000F9BFB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FBB20B442515BFD6000F9BFB /* BracketsInCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BracketsInCode; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +77,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		FBAE50A12517F112002EE642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAE50BF25184793002EE642 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -103,6 +122,14 @@
 			path = NetworkSimulation;
 			sourceTree = "<group>";
 		};
+		FBAE50C325184793002EE642 /* StackWithMax */ = {
+			isa = PBXGroup;
+			children = (
+				FBAE50C425184793002EE642 /* stack_with_max.cpp */,
+			);
+			path = StackWithMax;
+			sourceTree = "<group>";
+		};
 		FBB20B2C2515BDDC000F9BFB = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +137,7 @@
 				FBB20B452515BFD6000F9BFB /* BracketsInCode */,
 				FBB20B542516CCD0000F9BFB /* TreeHeight */,
 				FBAE50B32517F168002EE642 /* NetworkSimulation */,
+				FBAE50C325184793002EE642 /* StackWithMax */,
 				FBB20B362515BDDD000F9BFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +149,7 @@
 				FBB20B442515BFD6000F9BFB /* BracketsInCode */,
 				FBB20B532516CCD0000F9BFB /* TreeHeight */,
 				FBAE50A42517F112002EE642 /* NetworkSimulation */,
+				FBAE50C225184793002EE642 /* StackWithMax */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +196,23 @@
 			name = NetworkSimulation;
 			productName = NetworkSimulation;
 			productReference = FBAE50A42517F112002EE642 /* NetworkSimulation */;
+			productType = "com.apple.product-type.tool";
+		};
+		FBAE50C125184793002EE642 /* StackWithMax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAE50C625184793002EE642 /* Build configuration list for PBXNativeTarget "StackWithMax" */;
+			buildPhases = (
+				FBAE50BE25184793002EE642 /* Sources */,
+				FBAE50BF25184793002EE642 /* Frameworks */,
+				FBAE50C025184793002EE642 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackWithMax;
+			productName = StackWithMax;
+			productReference = FBAE50C225184793002EE642 /* StackWithMax */;
 			productType = "com.apple.product-type.tool";
 		};
 		FBB20B342515BDDD000F9BFB /* BasicDataStructures */ = {
@@ -232,6 +278,9 @@
 					FBAE50A32517F112002EE642 = {
 						CreatedOnToolsVersion = 12.0;
 					};
+					FBAE50C125184793002EE642 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					FBB20B342515BDDD000F9BFB = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -260,6 +309,7 @@
 				FBB20B432515BFD6000F9BFB /* BracketsInCode */,
 				FBB20B522516CCD0000F9BFB /* TreeHeight */,
 				FBAE50A32517F112002EE642 /* NetworkSimulation */,
+				FBAE50C125184793002EE642 /* StackWithMax */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +320,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBAE50B52517F168002EE642 /* network_simulation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAE50BE25184793002EE642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAE50C525184793002EE642 /* stack_with_max.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +369,26 @@
 			name = Debug;
 		};
 		FBAE50AA2517F112002EE642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FBAE50C725184793002EE642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBAE50C825184793002EE642 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +577,15 @@
 			buildConfigurations = (
 				FBAE50A92517F112002EE642 /* Debug */,
 				FBAE50AA2517F112002EE642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBAE50C625184793002EE642 /* Build configuration list for PBXNativeTarget "StackWithMax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAE50C725184793002EE642 /* Debug */,
+				FBAE50C825184793002EE642 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
