@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBAE50B52517F168002EE642 /* network_simulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBAE50B42517F168002EE642 /* network_simulation.cpp */; };
 		FBB20B392515BDDD000F9BFB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB20B382515BDDD000F9BFB /* main.cpp */; };
 		FBB20B472515BFD6000F9BFB /* brackets_in_code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB20B462515BFD6000F9BFB /* brackets_in_code.cpp */; };
 		FBB20B562516CCD0000F9BFB /* tree_height.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB20B552516CCD0000F9BFB /* tree_height.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		FBAE50A22517F112002EE642 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		FBB20B332515BDDD000F9BFB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FBAE50A42517F112002EE642 /* NetworkSimulation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NetworkSimulation; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAE50B42517F168002EE642 /* network_simulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_simulation.cpp; sourceTree = "<group>"; };
 		FBB20B352515BDDD000F9BFB /* BasicDataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BasicDataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB20B382515BDDD000F9BFB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FBB20B442515BFD6000F9BFB /* BracketsInCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BracketsInCode; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FBAE50A12517F112002EE642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBB20B322515BDDD000F9BFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,12 +95,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FBAE50B32517F168002EE642 /* NetworkSimulation */ = {
+			isa = PBXGroup;
+			children = (
+				FBAE50B42517F168002EE642 /* network_simulation.cpp */,
+			);
+			path = NetworkSimulation;
+			sourceTree = "<group>";
+		};
 		FBB20B2C2515BDDC000F9BFB = {
 			isa = PBXGroup;
 			children = (
 				FBB20B372515BDDD000F9BFB /* BasicDataStructures */,
 				FBB20B452515BFD6000F9BFB /* BracketsInCode */,
 				FBB20B542516CCD0000F9BFB /* TreeHeight */,
+				FBAE50B32517F168002EE642 /* NetworkSimulation */,
 				FBB20B362515BDDD000F9BFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +120,7 @@
 				FBB20B352515BDDD000F9BFB /* BasicDataStructures */,
 				FBB20B442515BFD6000F9BFB /* BracketsInCode */,
 				FBB20B532516CCD0000F9BFB /* TreeHeight */,
+				FBAE50A42517F112002EE642 /* NetworkSimulation */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +152,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FBAE50A32517F112002EE642 /* NetworkSimulation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAE50A82517F112002EE642 /* Build configuration list for PBXNativeTarget "NetworkSimulation" */;
+			buildPhases = (
+				FBAE50A02517F112002EE642 /* Sources */,
+				FBAE50A12517F112002EE642 /* Frameworks */,
+				FBAE50A22517F112002EE642 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkSimulation;
+			productName = NetworkSimulation;
+			productReference = FBAE50A42517F112002EE642 /* NetworkSimulation */;
+			productType = "com.apple.product-type.tool";
+		};
 		FBB20B342515BDDD000F9BFB /* BasicDataStructures */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBB20B3C2515BDDD000F9BFB /* Build configuration list for PBXNativeTarget "BasicDataStructures" */;
@@ -180,8 +226,12 @@
 		FBB20B2D2515BDDC000F9BFB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					FBAE50A32517F112002EE642 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					FBB20B342515BDDD000F9BFB = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -209,11 +259,20 @@
 				FBB20B342515BDDD000F9BFB /* BasicDataStructures */,
 				FBB20B432515BFD6000F9BFB /* BracketsInCode */,
 				FBB20B522516CCD0000F9BFB /* TreeHeight */,
+				FBAE50A32517F112002EE642 /* NetworkSimulation */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FBAE50A02517F112002EE642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAE50B52517F168002EE642 /* network_simulation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBB20B312515BDDD000F9BFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +300,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		FBAE50A92517F112002EE642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBAE50AA2517F112002EE642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		FBB20B3A2515BDDD000F9BFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -415,6 +494,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FBAE50A82517F112002EE642 /* Build configuration list for PBXNativeTarget "NetworkSimulation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAE50A92517F112002EE642 /* Debug */,
+				FBAE50AA2517F112002EE642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FBB20B302515BDDC000F9BFB /* Build configuration list for PBXProject "BasicDataStructures" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
