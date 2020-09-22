@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FBAE50B52517F168002EE642 /* network_simulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBAE50B42517F168002EE642 /* network_simulation.cpp */; };
 		FBAE50C525184793002EE642 /* stack_with_max.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBAE50C425184793002EE642 /* stack_with_max.cpp */; };
+		FBAE50DA25185243002EE642 /* max_sliding_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBAE50D925185243002EE642 /* max_sliding_window.cpp */; };
 		FBB20B392515BDDD000F9BFB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB20B382515BDDD000F9BFB /* main.cpp */; };
 		FBB20B472515BFD6000F9BFB /* brackets_in_code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB20B462515BFD6000F9BFB /* brackets_in_code.cpp */; };
 		FBB20B562516CCD0000F9BFB /* tree_height.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB20B552516CCD0000F9BFB /* tree_height.cpp */; };
@@ -25,6 +26,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		FBAE50C025184793002EE642 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FBAE50D525185243002EE642 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -67,6 +77,8 @@
 		FBAE50B42517F168002EE642 /* network_simulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_simulation.cpp; sourceTree = "<group>"; };
 		FBAE50C225184793002EE642 /* StackWithMax */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StackWithMax; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAE50C425184793002EE642 /* stack_with_max.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stack_with_max.cpp; sourceTree = "<group>"; };
+		FBAE50D725185243002EE642 /* MaxSlidingWindow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MaxSlidingWindow; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAE50D925185243002EE642 /* max_sliding_window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = max_sliding_window.cpp; sourceTree = "<group>"; };
 		FBB20B352515BDDD000F9BFB /* BasicDataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BasicDataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB20B382515BDDD000F9BFB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FBB20B442515BFD6000F9BFB /* BracketsInCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BracketsInCode; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +96,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FBAE50BF25184793002EE642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAE50D425185243002EE642 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,6 +149,14 @@
 			path = StackWithMax;
 			sourceTree = "<group>";
 		};
+		FBAE50D825185243002EE642 /* MaxSlidingWindow */ = {
+			isa = PBXGroup;
+			children = (
+				FBAE50D925185243002EE642 /* max_sliding_window.cpp */,
+			);
+			path = MaxSlidingWindow;
+			sourceTree = "<group>";
+		};
 		FBB20B2C2515BDDC000F9BFB = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +165,7 @@
 				FBB20B542516CCD0000F9BFB /* TreeHeight */,
 				FBAE50B32517F168002EE642 /* NetworkSimulation */,
 				FBAE50C325184793002EE642 /* StackWithMax */,
+				FBAE50D825185243002EE642 /* MaxSlidingWindow */,
 				FBB20B362515BDDD000F9BFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -150,6 +178,7 @@
 				FBB20B532516CCD0000F9BFB /* TreeHeight */,
 				FBAE50A42517F112002EE642 /* NetworkSimulation */,
 				FBAE50C225184793002EE642 /* StackWithMax */,
+				FBAE50D725185243002EE642 /* MaxSlidingWindow */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +242,23 @@
 			name = StackWithMax;
 			productName = StackWithMax;
 			productReference = FBAE50C225184793002EE642 /* StackWithMax */;
+			productType = "com.apple.product-type.tool";
+		};
+		FBAE50D625185243002EE642 /* MaxSlidingWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAE50DB25185243002EE642 /* Build configuration list for PBXNativeTarget "MaxSlidingWindow" */;
+			buildPhases = (
+				FBAE50D325185243002EE642 /* Sources */,
+				FBAE50D425185243002EE642 /* Frameworks */,
+				FBAE50D525185243002EE642 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaxSlidingWindow;
+			productName = MaxSlidingWindow;
+			productReference = FBAE50D725185243002EE642 /* MaxSlidingWindow */;
 			productType = "com.apple.product-type.tool";
 		};
 		FBB20B342515BDDD000F9BFB /* BasicDataStructures */ = {
@@ -281,6 +327,9 @@
 					FBAE50C125184793002EE642 = {
 						CreatedOnToolsVersion = 12.0;
 					};
+					FBAE50D625185243002EE642 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					FBB20B342515BDDD000F9BFB = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -310,6 +359,7 @@
 				FBB20B522516CCD0000F9BFB /* TreeHeight */,
 				FBAE50A32517F112002EE642 /* NetworkSimulation */,
 				FBAE50C125184793002EE642 /* StackWithMax */,
+				FBAE50D625185243002EE642 /* MaxSlidingWindow */,
 			);
 		};
 /* End PBXProject section */
@@ -328,6 +378,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBAE50C525184793002EE642 /* stack_with_max.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAE50D325185243002EE642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAE50DA25185243002EE642 /* max_sliding_window.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +447,26 @@
 			name = Debug;
 		};
 		FBAE50C825184793002EE642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FBAE50DC25185243002EE642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T8AJDDZXP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBAE50DD25185243002EE642 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +664,15 @@
 			buildConfigurations = (
 				FBAE50C725184793002EE642 /* Debug */,
 				FBAE50C825184793002EE642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBAE50DB25185243002EE642 /* Build configuration list for PBXNativeTarget "MaxSlidingWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAE50DC25185243002EE642 /* Debug */,
+				FBAE50DD25185243002EE642 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
